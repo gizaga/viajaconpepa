@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaja con Pepa</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header class="encabezado">
+        <div class="logo">
+            <a href="index.html"><img class="huella" src="img/huella.png" alt="logo"></a>
+            <h1>Viaja con Pepa</h1>
+        </div>
+        <!-- Menú de navegación -->
+        <nav class="nav-principal">
+            <a href="index.html">Inicio</a>
+            <a href="viajes.html">Mis Viajes</a>
+            <a href="noticias.html">Noticias</a>
+            <a class="activa" href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Contenido -->
+    <section>
+        <h2>¿Hablamos?</h2>
+
+        <main class="contacto">
+            <img src="img/email2.jpg" alt="Pepa revisando emails">
+            <a href="https://www.pexels.com/es-es/foto/ordenador-portatil-cama-habitacion-internet-4297818/" class="cita">Foto de ready made de Pexels</a>
+            
+            <!-- Formulario de contacto utilizando Grid para ordenar los inputs -->
+            <div class="formulario-rrss">
+                <form class="formulario" action="mailto:gizaga@birt.eus" method="post">
+                    <fieldset >
+                        <legend>Formulario de contacto</legend>
+
+                        <div class="contenedor-campos">
+                            <div class="campo">
+                                <label for="fname">Nombre</label>
+                                <input type="text" name="nombre" placeholder="Nombre">
+                            </div>
+                            
+                            <div class="campo">
+                                <label for="">Apellido</label>
+                                <input type="text" name="apellido" placeholder="Apellido">  
+                            </div>
+
+                            <div class="campo">
+                                <label for="">e-mail</label>
+                                <input type="email" name="email" placeholder="e-mail">
+                            </div>
+                            
+                            <div class="campo">
+                                <label for="">Mensaje</label>
+                                <textarea class="mensaje" name="mensaje" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="enviar">
+                            <input class="boton" type="submit" value="Enviar">
+                        </div>
+                    </fieldset>
+                </form>
+
+                <!-- Acceso a mis diferentes Redes Sociales -->
+                <div class="rrss">
+                    <a href="#"><img src="img/twitter.jpg" alt="twitter"></a>
+                    <a href="#"><img src="img/instagram.jpg" alt="twitter"></a>
+                    <a href="#"><img src="img/youtube.png" alt="twitter"></a>
+                </div>
+            </div>
+        </main>
+
+        <aside>
+
+        </aside>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Gonzalo Izaga | Creative Commons Attribution 4.0 International (CC BY 4.0)</p>
+    </footer>
+    
+</body>
+</html>
